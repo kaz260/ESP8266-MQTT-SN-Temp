@@ -3,8 +3,7 @@ Documentaion of the MQTT-SN implemented on ESP8266
 
 
 <h2><a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
-The openHAB ECHONET Lite binding allows to connect to ECHONET Lite Home Automation devices.
-Turn on/off the lights, air conditioner etc. Old version supports 'setc' function only and this version supports 'setc' and 'get' function.
+MQTT-SN is a kind of protocol  for Internet of Things(IoT). MQTT-SN is optimized for limited processing and storage resources. Major differences between MQTT are following:
 
 <h2><a id="user-content-configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration</h2>
 <pre><code># echonetlite:&lt;instance&gt;.host = &lt;ip&gt;
