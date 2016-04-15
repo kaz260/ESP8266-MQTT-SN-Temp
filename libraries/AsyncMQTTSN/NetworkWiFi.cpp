@@ -3,7 +3,6 @@
  *                      The BSD License
  *
  *           Copyright (c) 2015, tomoaki@tomy-tech.com
- *                    All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
@@ -208,7 +207,7 @@ int UdpPort::unicast(const uint8_t* buf, uint32_t length, uint32_t ipAddress, ui
 
 
 int UdpPort::multicast( const uint8_t* buf, uint32_t length ){
-	_udpMulticast.beginPacket(_gIpAddr, _gPortNo);
+	_udpMulticast.beginPacketMulticast(_gIpAddr, _gPortNo, _cIpAddr);
 	_udpMulticast.write(buf, length);
 	return _udpMulticast.endPacket();
 }
